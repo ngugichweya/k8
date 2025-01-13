@@ -43,8 +43,9 @@ jobs:
 
     steps:
       - name: Set up Minikube
-        uses: manusa/actions-setup-minikube@v2
+        uses: manusa/actions-setup-minikube@v2.5.0
         with:
+          minikube-version: 'latest'
           minikube-profile: github-actions
           kubernetes-version: v1.26.0
 
